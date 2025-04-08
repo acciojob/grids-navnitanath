@@ -1,16 +1,96 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Grid Layout</title>
+  <!-- Include Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Container styling */
+    .container {
+      width: 600px;
+      border: 5px solid rgb(4, 255, 4);
+      background-color: rgb(41, 0, 0);
+      padding: 10px;
+    }
+
+    /* Row styling */
+    .row {
+      border: 5px solid rgb(255, 188, 188);
+      height: 200px;
+      margin-bottom: 10px;
+    }
+
+    /* Column styling */
+    .col {
+      border: 2px dotted rgb(38, 38, 43);
+    }
+
+    /* Row 1 - Column 1 styling */
+    .row1-col1 {
+      background-color: teal;
+    }
+
+    /* Row 1 - Column 2 styling */
+    .row1-col2 {
+      background-color: thistle;
+    }
+
+    /* Row 2 - Column 1 styling */
+    .row2-col1 {
+      background-color: tomato;
+    }
+
+    /* Row 2 - Column 2 styling */
+    .row2-col2 {
+      background-color: turquoise;
+    }
+
+    /* Row 3 - Column 1 styling */
+    .row3-col1 {
+      background-color: violet;
+    }
+
+    /* Row 3 - Column 2 styling */
+    .row3-col2 {
+      background-color: yellowgreen;
+    }
+
+    /* Center alignment */
+    .center-text {
+      text-align: center;
+    }
+  </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
 
+  <!-- Main Container -->
+  <div class="container">
+    
+    <!-- Row 1 -->
+    <div class="row">
+      <div class="col-md-4 col-6 row1-col1">Column 1</div>
+      <div class="col-md-8 col-6 row1-col2">Column 2</div>
+    </div>
+
+    <!-- Row 2 -->
+    <div class="row">
+      <div class="col-md-3 offset-md-2 col-6 row2-col1">Column 1</div>
+      <div class="col-md-3 col-6 row2-col2">Column 2</div>
+    </div>
+
+    <!-- Row 3 -->
+    <div class="row">
+      <div class="col-md-4 col-6 row3-col1">Column 1</div>
+      <div class="col-md-4 col-6 row3-col2">Column 2</div>
+      <div class="col-md-4 col-6 center-text">Centered</div>
+    </div>
+
+  </div>
+
+  <!-- Include Bootstrap JS and dependencies -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
 </body>
-
 </html>
